@@ -1,0 +1,38 @@
+{
+  "database": "Zotero",
+  "noteImportFolder": "",
+  "pdfExportImageDPI": 120,
+  "pdfExportImageFormat": "png",
+  "pdfExportImageQuality": 90,
+  "citeFormats": [
+    {
+      "name": "Pandoc",
+      "format": "pandoc",
+      "brackets": true
+    },
+    {
+      "name": "apa_cite_bib",
+      "format": "formatted-citation",
+      "cslStyle": "apa"
+    },
+    {
+      "name": "apa_full_bib",
+      "format": "formatted-bibliography",
+      "cslStyle": "apa"
+    }
+  ],
+  "exportFormats": [
+    {
+      "name": "item_importer",
+      "outputPathTemplate": "NexusNotes/{{ itemType | replace(\"journalArticle\", \"Papers\") | replace(\"book\", \"Books\") }}/{{ citekey }}/{{ citekey }}.md",
+      "imageOutputPathTemplate": "RawArtifacts/Images/Zotero/{{citekey}}/",
+      "imageBaseNameTemplate": "{{citekey}}",
+      "templatePath": "Templates/zotero_item_importer_template.md",
+      "cslStyle": "apa"
+    }
+  ],
+  "citeSuggestTemplate": "[[{{citekey}}]]",
+  "openNoteAfterImport": false,
+  "whichNotesToOpenAfterImport": "first-imported-note",
+  "pdfExportImageOCR": false
+}

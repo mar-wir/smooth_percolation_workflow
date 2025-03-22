@@ -1,0 +1,9 @@
+{
+  "showInlineTitle": true,
+  "showLineNumber": true,
+  "livePreview": true,
+  "propertiesInDocument": "source",
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false
+}

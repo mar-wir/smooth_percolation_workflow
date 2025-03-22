@@ -1,0 +1,20 @@
+{
+  "folder": "NexusNotes/Books/",
+  "fileNameFormat": "{{author}}{{title}}{{DATE}}",
+  "frontmatter": "",
+  "content": "",
+  "useDefaultFrontmatter": true,
+  "defaultFrontmatterKeyType": "Camel Case",
+  "templateFile": "Templates/bookPlugin_item_importer_template.md",
+  "serviceProvider": "google",
+  "naverClientId": "",
+  "naverClientSecret": "",
+  "localePreference": "default",
+  "apiKey": "",
+  "openPageOnCompletion": true,
+  "showCoverImageInSearch": true,
+  "enableCoverImageSave": true,
+  "enableCoverImageEdgeCurl": false,
+  "coverImagePath": "Artifacts/Books/Covers",
+  "askForLocale": true
+}

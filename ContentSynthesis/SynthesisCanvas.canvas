@@ -1,0 +1,42 @@
+{
+  "edges": [
+  ],
+  "nodes": [
+    {
+      "color": "4",
+      "height": 80,
+      "id": "11631e8f5f5cc49a",
+      "styleAttributes": {
+      },
+      "text": "# NexusNotes",
+      "type": "text",
+      "width": 330,
+      "x": -1600,
+      "y": 800
+    },
+    {
+      "color": "1",
+      "height": 80,
+      "id": "cfdbd801d2b846a8",
+      "styleAttributes": {
+      },
+      "text": "# AtomicNotes",
+      "type": "text",
+      "width": 330,
+      "x": -1600,
+      "y": 920
+    },
+    {
+      "color": "6",
+      "height": 80,
+      "id": "6b4d89e33765f032",
+      "styleAttributes": {
+      },
+      "text": "# ConstructNotes",
+      "type": "text",
+      "width": 330,
+      "x": -1600,
+      "y": 1040
+    }
+  ]
+}

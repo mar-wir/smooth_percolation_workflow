@@ -1,0 +1,107 @@
+{
+  "cascadeColors": true,
+  "colorBackground": false,
+  "palette": [
+    {
+      "id": "dG8S3zwh6sgz0g_aU1Z_S",
+      "name": "v5",
+      "value": "#35fddc"
+    },
+    {
+      "id": "L5oF_BVkqJaOKMWM9MZ0B",
+      "name": "Nexus Green",
+      "value": "#4dfe82"
+    },
+    {
+      "id": "kOUkP61aZLwEjzt9sqwi4",
+      "name": "Construction Yellow",
+      "value": "#fde725"
+    },
+    {
+      "id": "oqIyerR04nhRZn_6OXLD9",
+      "name": "KommunismRed",
+      "value": "#f00000"
+    },
+    {
+      "id": "YBTCgzXaPH2VgX2FLZQ2w",
+      "name": "PooPoo",
+      "value": "#fe955d"
+    },
+    {
+      "id": "fJ4-EmSTIVLY2Jk9T-VQ1",
+      "name": "ConsructNode",
+      "value": "#d400ff"
+    },
+    {
+      "id": "QAE-oZjJhY9EouG42SuNp",
+      "name": "files",
+      "value": "#ffffff"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "Others",
+      "color": "QAE-oZjJhY9EouG42SuNp"
+    },
+    {
+      "path": "Queries",
+      "color": "dG8S3zwh6sgz0g_aU1Z_S"
+    },
+    {
+      "path": "Templates",
+      "color": "kOUkP61aZLwEjzt9sqwi4"
+    },
+    {
+      "path": "NexusNotes",
+      "color": "L5oF_BVkqJaOKMWM9MZ0B"
+    },
+    {
+      "path": "ContentSynthesis",
+      "color": "fJ4-EmSTIVLY2Jk9T-VQ1"
+    },
+    {
+      "path": "RawArtifacts",
+      "color": "YBTCgzXaPH2VgX2FLZQ2w"
+    },
+    {
+      "path": "Templates/audio_to_note.md",
+      "color": "L5oF_BVkqJaOKMWM9MZ0B"
+    },
+    {
+      "path": "Templates/atomize_note_extract_text_no_llm.md",
+      "color": "oqIyerR04nhRZn_6OXLD9"
+    },
+    {
+      "path": "Templates/atomize_note_extract_text_llm.md",
+      "color": "oqIyerR04nhRZn_6OXLD9"
+    },
+    {
+      "path": "Templates/bookPlugin_item_importer_template.md",
+      "color": "L5oF_BVkqJaOKMWM9MZ0B"
+    },
+    {
+      "path": "Templates/Classes/NexusNote.md",
+      "color": "L5oF_BVkqJaOKMWM9MZ0B"
+    },
+    {
+      "path": "Templates/Classes/ConstructNote.md",
+      "color": "fJ4-EmSTIVLY2Jk9T-VQ1"
+    },
+    {
+      "path": "Templates/Classes/AtomicNote.md",
+      "color": "oqIyerR04nhRZn_6OXLD9"
+    },
+    {
+      "path": "Templates/integrate_notes_into_target.md",
+      "color": "fJ4-EmSTIVLY2Jk9T-VQ1"
+    },
+    {
+      "path": "Templates/spawn_construct_note.md",
+      "color": "fJ4-EmSTIVLY2Jk9T-VQ1"
+    },
+    {
+      "path": "Templates/zotero_item_importer_template.md",
+      "color": "L5oF_BVkqJaOKMWM9MZ0B"
+    }
+  ]
+}

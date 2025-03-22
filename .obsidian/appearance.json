@@ -1,0 +1,11 @@
+{
+  "nativeMenus": false,
+  "theme": "obsidian",
+  "accentColor": "#ffffff",
+  "cssTheme": "Obsidianite",
+  "enabledCssSnippets": [],
+  "baseFontSize": 20,
+  "interfaceFontFamily": "Bahnschrift",
+  "textFontFamily": "Helvetica Neue",
+  "showRibbon": true
+}

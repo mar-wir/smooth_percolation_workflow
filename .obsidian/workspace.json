@@ -1,0 +1,251 @@
+{
+  "main": {
+    "id": "0a940841bac42a63",
+    "type": "split",
+    "children": [
+      {
+        "id": "86d92b4933dcde8c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "404c4f605950681a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d6d3329906fcac02",
+    "type": "split",
+    "children": [
+      {
+        "id": "a7a1a06dc4d50283",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b1940f7e22e9df2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "6d12120aaac526f9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:-",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f25db7dcbd1d5ae9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 394.5
+  },
+  "right": {
+    "id": "56f7e21b6582bbc2",
+    "type": "split",
+    "children": [
+      {
+        "id": "5da16f9ccc84be53",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8d00e67b5dcbcc52",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "NexusNotes/Papers/fristonDynamicCausalModelling2003/fristonDynamicCausalModelling2003.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for fristonDynamicCausalModelling2003"
+            }
+          },
+          {
+            "id": "ef56d4348e4b8c5a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "NexusNotes/Papers/fristonDynamicCausalModelling2003/The text discusses a neuroimaging analysis method using nonlinear functions to model hemodynamic states and estimate effective connectivity between brain regions..md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from The text discusses a neuroimaging analysis method using nonlinear functions to model hemodynamic states and estimate effective connectivity between brain regions."
+            }
+          },
+          {
+            "id": "676fb4fb2b97f3ca",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "6a86b91284aeb313",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "NexusNotes/Papers/fristonDynamicCausalModelling2003/The text discusses a neuroimaging analysis method using nonlinear functions to model hemodynamic states and estimate effective connectivity between brain regions..md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of The text discusses a neuroimaging analysis method using nonlinear functions to model hemodynamic states and estimate effective connectivity between brain regions."
+            }
+          },
+          {
+            "id": "acdd1d43ec79b221",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "command-palette:Open command palette": false,
+      "switcher:Open quick switcher": true,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": true,
+      "templates:Insert template": true,
+      "canvas:Create new canvas": true,
+      "audio-recorder:Start/stop recording": false,
+      "obsidian-book-search-plugin:Create new book note": false,
+      "templater-obsidian:Templater": false,
+      "callout-manager:Insert Callout": false,
+      "dbfolder:Create a new database table": false
+    }
+  },
+  "active": "404c4f605950681a",
+  "lastOpenFiles": [
+    "README.md",
+    "Queries/example_query.md",
+    "ContentSynthesis/SynthesisCanvas.canvas",
+    "Others/PersonalNotes/README.md",
+    "Others/PersonalNotes/obsidian_templater_cheat_sheet.md",
+    "Templates/insert_image_interpretation.md",
+    "Templates/insert_audio_transcription.md",
+    "Templates/bookPlugin_item_importer_template.md",
+    "Others/PersonalNotes/Links_Todos.md",
+    "Pasted image 20250321131305.png",
+    "NexusNotes/Books/kelsoDynamicPatternsSelforganization1999/kelsoDynamicPatternsSelforganization1999.md",
+    "NexusNotes/Papers/fristonDynamicCausalModelling2003/fristonDynamicCausalModelling2003.md",
+    "Templates/Classes/NexusNote.md",
+    "().md",
+    "Others/PersonalNotes/Gastos mensuales.md",
+    "Others/PersonalNotes/FiltroCuentas.md",
+    "ContentSynthesis/Movidas Complejas.md",
+    "Templates/spawn_construct_note.md",
+    "ContentSynthesis/ultimate construct.md",
+    "ContentSynthesis/Manmanman.md",
+    "Templates/integrate_notes_into_target.md",
+    "NexusNotes/Papers/fristonDynamicCausalModelling2003/DCM with bilinear approximation enables modeling of input-dependent connectivity changes and pathway activation in brain regions..md",
+    "NexusNotes/Papers/fristonDynamicCausalModelling2003/This text discusses Gaussian prior distributions for biophysical and hemodynamic parameters, calculating posterior modes and marginal probabilities to analyze impulse and hemodynamic responses..md",
+    "Templates/Classes/ConstructNote.md",
+    "Templates/zotero_item_importer_template.md",
+    "Templates/tmp_template.md",
+    "Templates/Classes/AtomicNote.md",
+    "Templates/atomize_note_extract_text_no_llm.md",
+    "Others/BibliographyFiles/bibliography",
+    "Others/BibliographyFiles/bib (Copy).bib",
+    "Others/BibliographyFiles/bib.bib",
+    "Others/BibliographyFiles",
+    "NexusNotes/Papers/fristonDynamicCausalModelling2003/This text discusses Gaussian prior distributions for biophysical and hemodynamic parameters, calculating posterior modes and marginal probabilities to analyze impulse and hemodynamic responses..odt",
+    "NexusNotes/Papers/fristonDynamicCausalModelling2003/This text discusses Gaussian prior distributions for biophysical and hemodynamic parameters, calculating posterior modes and marginal probabilities to analyze impulse and hemodynamic responses..pdf",
+    "NexusNotes/Books/kelsoDynamicPatternsSelforganization1999/Neuronal activity correlates with vasodilatory signals and blood flow responses, influenced by deoxyhemoglobin content and volume changes..odt",
+    "NexusNotes/Books/kelsoDynamicPatternsSelforganization1999/kelsoDynamicPatternsSelforganization1999.odt",
+    "NexusNotes/Books/kelsoDynamicPatternsSelforganization1999/Neuronal activity correlates with vasodilatory signals and blood flow responses, influenced by deoxyhemoglobin content and volume changes..pdf",
+    "NexusNotes/Books/kelsoDynamicPatternsSelforganization1999/Neuronal activity correlates with vasodilatory signals and blood flow responses, influenced by deoxyhemoglobin content and volume changes..aux",
+    "RawArtifacts/Images/Zotero/fristonDynamicCausalModelling2003/fristonDynamicCausalModelling2003-5-x309-y297.png",
+    "RawArtifacts/Images/Zotero/fristonDynamicCausalModelling2003/Wilmot_Juan.png",
+    "RawArtifacts/Images/Banners/nexus_note_header.webp",
+    "RawArtifacts/Images/Banners/construct_node_header.webp",
+    "RawArtifacts/Images/Banners/atomic_note_header.webp",
+    "RawArtifacts/Images/Banners/nexus_note.png",
+    "{RawArtifacts/Images/Zotero/fristonDynamicCausalModelling2003/fristonDynamicCausalModelling2003-5-x309-y297.png",
+    "atom.svg",
+    "ContentSynthesis/Topic1/Topic1_Canvas.canvas",
+    "RawArtifacts/Images/Banners/nexus_note_header.png",
+    "sdfdsfsdfsfd.canvas",
+    "old_style.canvas",
+    "hhhh.canvas",
+    "2445.canvas",
+    "3213.canvas",
+    "22.canvas",
+    "544.canvas",
+    "kjnkjn.canvas"
+  ]
+}

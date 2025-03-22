@@ -1,0 +1,10 @@
+{
+  "templater-obsidian:create-Templates/audio_to_note.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Numpad7"
+    }
+  ]
+}

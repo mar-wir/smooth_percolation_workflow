@@ -1,0 +1,65 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 21,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "❔",
+      "LiCog",
+      "📜",
+      "📚",
+      "LiGlobe"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": true,
+    "iconInTitleEnabled": true,
+    "iconInTitlePosition": "inline",
+    "iconInFrontmatterEnabled": true,
+    "iconInFrontmatterFieldName": "iconize_icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "Queries": "LiDatabase",
+  "Templates": "LiBookTemplate",
+  "RawArtifacts": "CoFileBlank",
+  "RawArtifacts/Audios": "LiAudioLines",
+  "RawArtifacts/Books": "LiBookA",
+  "RawArtifacts/Images": "LiImages",
+  "RawArtifacts/Ink": "LiPen",
+  "RawArtifacts/Papers": "FarFilePdf",
+  "RawArtifacts/Videos": "LiVideo",
+  "NexusNotes": "LiWaypoints",
+  "ContentSynthesis": "LiCog",
+  "NexusNotes/Audios": "LiFileAudio",
+  "NexusNotes/Books": "RaBook",
+  "NexusNotes/Videos": "FarFileVideo",
+  "NexusNotes/Papers": "IbStackHorizontal",
+  "NexusNotes/Data": "LiTable",
+  "Templates/atomize_note_extract_text_llm.md": "✍️",
+  "Templates/zotero_item_importer_template.md": {
+    "iconName": "📚"
+  },
+  "Templates/bookPlugin_item_importer_template.md": {
+    "iconName": "📚"
+  },
+  "NexusNotes/Web": "LiGlobe",
+  "Others": "❔",
+  "Others/Excuses": "🖕",
+  "Others/ForReview": "LiSkull",
+  "Others/Tmp": "☠"
+}
