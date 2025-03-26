@@ -121,9 +121,44 @@ All commands need to be run in editing view. The GPU reliant commands can techni
 
 # Installation and Dependencies
 
-- Modify the path to your pandoc installation in the Pandoc Reference List plugin settings
 
-Rest is Coming Soon
+
+## Must-Haves
+
+Tested on Linux Ubuntu 24.04 and Windows 11.
+
+1. [Obsidian](https://help.obsidian.md/install). The core and community plugins will auto-install. You can update them in the settings if needed.
+2. [Zotero](https://www.zotero.org/support/installation)
+3. [Zotero BetterBibTexExtension](https://github.com/retorquere/zotero-better-bibtex/releases/) Installation instructions can be found [here](https://retorque.re/zotero-better-bibtex/installation/index.html) Basically, download a file and add it in a option menu in Zotero.
+
+Basics of the workflow can already be utilized:
+
+- Zotero Item Importer
+- Books Metadata Creator
+- Non-LLM Atomization
+- Notes Combination into construct notes
+- Query-to-Canvas
+
+## AI Assistance
+
+Tested on Linux Ubuntu 24.04
+
+1. [Ollama](https://ollama.com/download). Runs on the standard port. For the "Audio to Note" and "LLM Automization" functionality, you can use any model you like. For the "Insert Image Interpretation" functionality, you need any verion of [LLaVA](https://ollama.com/library/llava)
+2. [Vox-Box](https://github.com/gpustack/vox-box): Basically `pip install vox-box`. Test the basic utility via curl before using inside Obsidian e.g.
+```bash
+curl https://localhost/v1/audio/transcriptions \
+  -H "Content-Type: multipart/form-data" \
+  -F file="@/path/to/file/audio.mp3" \
+  -F model="whisper-large-v3"
+```
+Note that the "@" is part of the filepath and cannot be removed! Vox-Box will gather the model binary directly from hugging-face for you. Once this works on the command line, you can try in Obsidian. I am sure it also can work directly in Obsidian, but you will need to wait the model to download.
+
+## Pandoc
+
+Tested on Linux Ubuntu 24.04 and Windows 11.
+Pandoc is used for exporting the markdown text of your finished write-ups to any imaginable format. If you need to export to pdf, a additional dependency is needed, called "XeLaTeX".
+1. [Pandoc](https://pandoc.org/installing.html). After installation, you need to modify the path to your pandoc installation in the Pandoc Reference List plugin settings
+2. [LaTeX Compiler](https://www.latex-project.org/get/) The "flavour" (MikTex, Xelatex, LatexLive etc.) depends on you system. In my case, Xelatex worked for Ubuntu.
 
 # Plugins, their usage and further suggestions
 
