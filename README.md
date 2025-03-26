@@ -143,7 +143,7 @@ Basics of the workflow can already be utilized:
 
 Tested on Linux Ubuntu 24.04
 
-1. [Ollama](https://ollama.com/download). Runs on the standard port. For the "Audio to Note" and "LLM Automization" functionality, you can use any model you like. For the "Insert Image Interpretation" functionality, you need any verion of [LLaVA](https://ollama.com/library/llava)
+1. [Ollama](https://ollama.com/download). Runs on the standard port. For the "Audio to Note" and "LLM Atomization" functionality, you can use any model you like. For the "Insert Image Interpretation" functionality, you need any verion of [LLaVA](https://ollama.com/library/llava)
 2. [Vox-Box](https://github.com/gpustack/vox-box): Basically `pip install vox-box`. Test the basic utility via curl before using inside Obsidian e.g.
 ```bash
 curl https://localhost/v1/audio/transcriptions \
