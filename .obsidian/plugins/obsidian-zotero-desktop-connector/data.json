@@ -24,7 +24,7 @@
   "exportFormats": [
     {
       "name": "item_importer",
-      "outputPathTemplate": "NexusNotes/{{ itemType | replace(\"journalArticle\", \"Papers\") | replace(\"book\", \"Books\") }}/{{ citekey }}/{{ citekey }}.md",
+      "outputPathTemplate": "NexusNotes/{{ itemType | replace(\"journalArticle\", \"Papers\")  | replace(\"preprint\", \"Papers\") | replace(\"book\", \"Books\") }}/{{ citekey }}/{{ citekey }}.md",
       "imageOutputPathTemplate": "RawArtifacts/Images/Zotero/{{citekey}}/",
       "imageBaseNameTemplate": "{{citekey}}",
       "templatePath": "Templates/zotero_item_importer_template.md",
