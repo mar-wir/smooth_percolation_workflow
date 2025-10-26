@@ -3,7 +3,7 @@ name: {{title | replace(":", "")}}
 medium: {{itemType}}
 creators: {%- if editors %} {{editors}} {%- else %} {{authors}} {%- endif %}
 identifier: {%- if DOI %} {{DOI}} {%- else %} {{ISBN}} {%- endif %}
-tags: NexusNote {{itemType}} {% if allTags %}{{allTags}}{% endif %}
+tags: [NexusNote, {{itemType}}, {% if allTags %}{{allTags}}{% endif %}]
 citekey: {{citekey}}
 icon: {%- if itemType == "journalArticle" %} "📜"  {%- else %} "📚" {%- endif %}
 banner: "[[nexus_note_header.webp]]"
