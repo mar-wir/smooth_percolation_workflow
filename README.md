@@ -14,15 +14,18 @@ Import a paper, book or any other document type into Zotero. Metadata is updated
 
 https://github.com/user-attachments/assets/bccf533a-78a5-48b8-9dc5-d1b06c9b58b9
 
-## I want to import all markings I made in a paper/book/document  to Obsidian
+## I want to import all markings I made in a paper/book/document to Obsidian
 
 1. *Zotero* must be running alongside *Obsidian*
 2. Open the *Command Palette* with `Ctrl`/`Cmd` + `P` or by clicking on the icon `>_` on the left.
 3. Type `item importer` and select `Zotero Integration:item_importer` 
 4. Zotero will spawn a small window. Change to it and start typing the name(s) of the documents of interest (author, title etc.). Select the ones of interest.
-5. A new *NexusNote* will be created with the corresponding *citekey*. Done!
+5. A new *NexusNote* will be created with the corresponding *citekey* and all relevant metadata. Done!
 
 https://github.com/user-attachments/assets/b3119937-c88b-4c0b-ac13-6284356ddd60
+<img width="2460" height="1323" alt="image" src="https://github.com/user-attachments/assets/37f64e13-5df9-4f96-8857-9f3d462cf1e8" />
+<img width="2460" height="1323" alt="image" src="https://github.com/user-attachments/assets/8e1fb093-902a-44b4-a480-c6888dfee8c3" />
+
 
 ## I want to create notes from my markings that are automatically linked to its source
 
@@ -34,6 +37,15 @@ Be sure you are in **edit mode** (top right icon).
 4. Type `insert atomize`. Select `Templater Insert Templates/atomize_note_extract_text_llm.md` (or the the choice with `no_llm`, see below for the explanation of the difference.) Done!
 
 https://github.com/user-attachments/assets/8473befa-47a2-4289-86bb-1c250211f4d4
+
+With the `llm` option, title and tags get generated automatically for you. This is just to get one started! Also, The content is "reformulated" and explained by the llm for further writing aid. This is pure fluff.
+
+<img width="2460" height="1323" alt="image" src="https://github.com/user-attachments/assets/00b17de0-cd1f-4581-bcfa-ddbe4286e334" />
+<img width="2460" height="1323" alt="image" src="https://github.com/user-attachments/assets/21d2f9de-e64c-44d1-8a8c-e7a541bae964" />
+
+The links between notes are generated automatically:
+<img width="1183" height="990" alt="image" src="https://github.com/user-attachments/assets/efc80b00-ff39-46f8-8be8-6e2b9d929ee9" />
+
 
 # Yes, but *why*?
 
