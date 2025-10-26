@@ -23,6 +23,7 @@ https://github.com/user-attachments/assets/bccf533a-78a5-48b8-9dc5-d1b06c9b58b9
 5. A new *NexusNote* will be created with the corresponding *citekey* and all relevant metadata. Done!
 
 https://github.com/user-attachments/assets/b3119937-c88b-4c0b-ac13-6284356ddd60
+
 <img width="2460" height="1323" alt="image" src="https://github.com/user-attachments/assets/37f64e13-5df9-4f96-8857-9f3d462cf1e8" />
 <img width="2460" height="1323" alt="image" src="https://github.com/user-attachments/assets/8e1fb093-902a-44b4-a480-c6888dfee8c3" />
 
