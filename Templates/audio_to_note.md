@@ -144,7 +144,7 @@ await tp.file.move(`NexusNotes/Audios/${activeFile.basename}/transcription ${act
 _%>
 
 ---
-tags: NexusNote audio audio_transcription <% tag_suggestion.toLowerCase().split(',').join("") %> 
+tags: [NexusNote, audio_transcription, <% tag_suggestion.toLowerCase() %> ]
 banner: [[nexus_note_header.webp]]
 medium_source: <% `"[[${activeFile.name}]]"` %>
 medium: audio

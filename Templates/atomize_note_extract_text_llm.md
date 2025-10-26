@@ -90,7 +90,7 @@ const noteType = await tp.system.suggester(options, options)
 
 const content = 
 `---
-tags: AtomicNote ${tag_suggestion.toLowerCase().split(',').join("")}
+tags: [AtomicNote, ${tag_suggestion.toLowerCase()}]
 nexus_name: ${ tp.frontmatter["name"] }
 nexus_medium: ${ tp.frontmatter["medium"] } 
 nexus_creators: ${ tp.frontmatter["creators"] }

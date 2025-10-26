@@ -3,7 +3,7 @@ name: {{title}}
 medium: book
 creators: {{authors}} 
 identifier: {{ISBN10}}
-tags: NexusNote book {{category}}
+tags: [NexusNote, book, {{category}}]
 citekey:
 icon: "📚"
 banner: "[[nexus_note_header.webp]]"

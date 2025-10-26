@@ -2,13 +2,13 @@
 limit: 20
 mapWithTag: false
 icon: waypoints
-tagNames: 
-filesPaths: 
-bookmarksGroups: 
-excludes: 
-extends: 
+tagNames:
+filesPaths:
+bookmarksGroups:
+excludes:
+extends:
 savedViews: []
-favoriteView: 
+favoriteView:
 fieldsOrder:
   - iJaNse
   - C0wxX1
@@ -20,7 +20,7 @@ fieldsOrder:
   - c1sFNf
   - Vuq5so
   - QQHcVK
-version: "2.25"
+version: "2.27"
 fields:
   - name: banner
     type: Media
@@ -64,7 +64,7 @@ fields:
     path: ""
     id: p7eQOt
   - name: tags
-    type: Input
+    type: input
     options: {}
     path: ""
     id: kxa9Mf
