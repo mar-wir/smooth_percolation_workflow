@@ -35,7 +35,8 @@
     "Templates/audio_to_note.md",
     "Templates/insert_audio_transcription.md",
     "Templates/insert_image_interpretation.md",
-    "Templates/spawn_construct_note.md"
+    "Templates/spawn_construct_note.md",
+    "Templates/spawn_nexus_note.md"
   ],
   "startup_templates": [
     ""
