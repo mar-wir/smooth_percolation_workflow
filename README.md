@@ -24,6 +24,17 @@ https://github.com/user-attachments/assets/bccf533a-78a5-48b8-9dc5-d1b06c9b58b9
 
 https://github.com/user-attachments/assets/b3119937-c88b-4c0b-ac13-6284356ddd60
 
+## I want to create notes from my markings that are automatically linked to its source
+
+Be sure you are in **edit mode** (top right icon).
+
+1. Open you *NexusNote* of interest in *Obsidian*.
+2. Select the text you would like to extract into a new note.
+3. Open the *Command Palette* with `Ctrl`/`Cmd` + `P` or by clicking on the icon `>_` on the left.
+4. Type `insert atomize`. Select `Templater Insert Templates/atomize_note_extract_text_llm.md` (or the the choice with `no_llm`, see below for the explanation of the difference.) Done!
+
+https://github.com/user-attachments/assets/8473befa-47a2-4289-86bb-1c250211f4d4
+
 # Yes, but *why*?
 
 When reading (technical) literature, I underline passages and add comments, but these annotations often end up unused or require tedious copy-pasting to another tool. Keeping track of sources for proper citation management is another hassle.
