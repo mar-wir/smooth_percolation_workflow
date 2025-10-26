@@ -12,6 +12,8 @@ Starting point usually are elements in a Zotero library. Those elements, if prop
 
 Import a paper, book or any other document type into Zotero. Metadata is updated automatically in most cases. If not, with the ISBN or other identifier one surely can succeed. 
 
+https://github.com/user-attachments/assets/bccf533a-78a5-48b8-9dc5-d1b06c9b58b9
+
 ## I want to import all markings I made in a paper/book/document  to Obsidian
 
 1. *Zotero* must be running alongside *Obsidian*
