@@ -1,4 +1,9 @@
 <%*
+const vox_port = 8099;
+const vox_model = `faster-whisper-small`;
+const ollama_port = 11434;
+const ollama_model = `gemma3:latest`;
+
 const { execSync } = require('child_process');
 const fs = require('fs');
 
@@ -20,7 +25,7 @@ YOU MIGHT HAVE TO TRY TWICE AS THE SERVER STARTUP DID NOT CONCLUDE FAST ENOUGH!`
 let serverRunning = false;
 
 try {
-    const healthCheck = execSync('curl -s http://localhost:8090/health').toString().trim();
+    const healthCheck = execSync(`curl -s http://localhost:${vox_port}/health`).toString().trim();
     if (healthCheck === '{"status":"ok"}') {
         serverRunning = true;
     }
@@ -32,7 +37,7 @@ try {
 let startedServer = false;
 if (!serverRunning) {
     try {
-        await execSync('vox-box start --huggingface-repo-id Systran/faster-whisper-small --data-dir ././cache/data-dir --host localhost --port 8090 &', { stdio: 'ignore' });
+        await execSync(`vox-box start --huggingface-repo-id Systran/${vox_model} --data-dir ././cache/data-dir --host localhost --port ${vox_port} &`, { stdio: 'ignore' });
         startedServer = true;
         console.log("Starting Vox-Box server...");
         
@@ -47,7 +52,7 @@ if (!serverRunning) {
 // Send the audio file for transcription
 let transcribed_audio = "Transcription failed.";
 try {
-    const curlCommand = `curl -s -X POST http://localhost:8090/v1/audio/transcriptions -H "Content-Type: multipart/form-data" -F file="@${audio_path}" -F model="whisper-small"`;
+    const curlCommand = `curl -s -X POST http://localhost:${vox_port}/v1/audio/transcriptions -H "Content-Type: multipart/form-data" -F file="@${audio_path}" -F model=${vox_model}`;
     const response = execSync(curlCommand).toString().trim();
 	console.log(response)
     // Extract transcribed text
@@ -60,7 +65,7 @@ try {
 // Shut down the server if we started it using fuser
 if (startedServer) {
     try {
-        execSync('fuser -k 8090/tcp', { stdio: 'ignore' });
+        execSync(`fuser -k ${vox_port}/tcp`, { stdio: 'ignore' });
         conole.log("Vox-Box server stopped using fuser.");
     } catch (error) {
         console.warn("Failed to stop Vox-Box server.\n");
@@ -69,9 +74,9 @@ if (startedServer) {
 
 // OLLAMA
 // ---
-
-const ollama_url = "http://localhost:11434/api/generate";
-const model_to_use = "mannix/llama3.1-8b-abliterated:latest";
+console.log("Ollama part")
+const ollama_url = `http://localhost:${ollama_port}/api/generate`;
+const model_to_use = ollama_model;
 
 const tag_prompt = ` Generate tags without using #, focusing on single words over phrases for documents' key topics. Format: tag1, tag2, tag3. Limit tags to four or five. Limit multiword tags. Just output the words. Do not comment the response. Remember, not more than 5 tags!  Contents: ${transcribed_audio} `;
 

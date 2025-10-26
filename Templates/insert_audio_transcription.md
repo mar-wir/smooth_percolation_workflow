@@ -1,4 +1,6 @@
 <%*
+const myport = 8099;
+const mymodel = `faster-whisper-small`;
 const { execSync } = require('child_process');
 new Notice(`VoxBox server is starting and sending audio. Please be patient. The interface might freeze up while transcription is ongoing.
 YOU MIGHT HAVE TO TRY TWICE AS THE SERVER STARTUP DID NOT CONCLUDE FAST ENOUGH!`, 10);
@@ -20,7 +22,7 @@ const audio_path = app.vault.adapter.getFullPath(activeFile.path);
 let serverRunning = false;
 
 try {
-    const healthCheck = execSync('curl -s http://localhost:8090/health').toString().trim();
+    const result = execSync(`curl -s http://localhost:${myport}/health`).toString().trim();
     if (healthCheck === '{"status":"ok"}') {
         serverRunning = true;
     }
@@ -32,7 +34,7 @@ try {
 let startedServer = false;
 if (!serverRunning) {
     try {
-        await execSync('vox-box start --huggingface-repo-id Systran/faster-whisper-small --data-dir ././cache/data-dir --host localhost --port 8090 &', { stdio: 'ignore' });
+        await execSync(`vox-box start --huggingface-repo-id Systran/${mymodel} --data-dir ././cache/data-dir --host localhost --port ${myport} &`, { stdio: 'ignore' });
         startedServer = true;
         console.log("Starting Vox-Box server...");
         
@@ -48,7 +50,7 @@ if (!serverRunning) {
 let transcribed_audio = "Transcription failed.";
 
 try {
-    const curlCommand = `curl -s -X POST http://localhost:8090/v1/audio/transcriptions -H "Content-Type: multipart/form-data" -F file="@${audio_path}" -F model="whisper-small"`;
+    const curlCommand = `curl -s -X POST http://localhost:${myport}/v1/audio/transcriptions -H "Content-Type: multipart/form-data" -F file="@${audio_path}" -F model=${mymodel}`;
     const response = execSync(curlCommand).toString().trim();
     // Extract transcribed text
     const jsonResponse = JSON.parse(response);
@@ -60,7 +62,7 @@ try {
 // Shut down the server if we started it using fuser
 if (startedServer) {
     try {
-        execSync('fuser -k 8090/tcp', { stdio: 'ignore' });
+        execSync(`fuser -k ${myport}/tcp`, { stdio: 'ignore' });
         conole.log("Vox-Box server stopped using fuser.");
     } catch (error) {
         console.warn("Failed to stop Vox-Box server.\n");
