@@ -21,6 +21,9 @@ https://github.com/user-attachments/assets/bccf533a-78a5-48b8-9dc5-d1b06c9b58b9
 3. Type `item importer` and select `Zotero Integration:item_importer` 
 4. Zotero will spawn a small window. Change to it and start typing the name(s) of the documents of interest (author, title etc.). Select the ones of interest.
 5. A new *NexusNote* will be created with the corresponding *citekey*. Done!
+
+https://github.com/user-attachments/assets/b3119937-c88b-4c0b-ac13-6284356ddd60
+
 # Yes, but *why*?
 
 When reading (technical) literature, I underline passages and add comments, but these annotations often end up unused or require tedious copy-pasting to another tool. Keeping track of sources for proper citation management is another hassle.
