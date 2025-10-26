@@ -52,10 +52,6 @@
       "color": "kOUkP61aZLwEjzt9sqwi4"
     },
     {
-      "path": "NexusNotes",
-      "color": "L5oF_BVkqJaOKMWM9MZ0B"
-    },
-    {
       "path": "ContentSynthesis",
       "color": "fJ4-EmSTIVLY2Jk9T-VQ1"
     },
@@ -101,6 +97,10 @@
     },
     {
       "path": "Templates/zotero_item_importer_template.md",
+      "color": "L5oF_BVkqJaOKMWM9MZ0B"
+    },
+    {
+      "path": "NexusNotes",
       "color": "L5oF_BVkqJaOKMWM9MZ0B"
     }
   ]

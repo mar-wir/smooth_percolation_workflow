@@ -26,7 +26,7 @@ const image_path = app.vault.adapter.getFullPath(activeFile.path);
 // ---
 
 const ollama_url = "http://localhost:11434/api/generate";
-const model_to_use = "llava:13b";
+const model_to_use = "gemma3:12b";
 
 const prompt = await tp.system.prompt("Indicate how you want llava to describe the image...",
 									  "Describe the image:",

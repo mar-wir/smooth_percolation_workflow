@@ -14,7 +14,7 @@ if ( !sel ) {
 }
 
 const ollama_url = "http://localhost:11434/api/generate";
-const model_to_use = "mannix/llama3.1-8b-abliterated:latest";
+const model_to_use = "gemma3:latest";
 
 const tag_prompt = ` Generate tags without using #, focusing on single words over phrases for documents' key topics. Format: tag1, tag2, tag3. Limit tags to four or five. Limit multiword tags. Just output the words. Do not comment the response. Remember, not more than 5 tags!  Contents: ${sel} `;
 

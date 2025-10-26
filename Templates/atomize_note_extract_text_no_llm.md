@@ -37,6 +37,6 @@ links_to_constructs:
 ${ sel }
 
 `
-tR = `[[${ newFile }]]`
+tR = `[[${ newFile.replaceAll(":", "").replaceAll("//", "").replaceAll("\\", "")}]]`
 await tp.file.create_new(content, newFile, false, baseFolder)
 _%>
