@@ -47,6 +47,36 @@ With the `llm` option, title and tags get generated automatically for you. This 
 The links between notes are generated automatically:
 <img width="1183" height="990" alt="image" src="https://github.com/user-attachments/assets/efc80b00-ff39-46f8-8be8-6e2b9d929ee9" />
 
+## I want to create a list based on filters and tags of several notes and move them all to a canvas
+
+1. Go to Queries/Transfer to Canvas
+2. Edit the query to your liking. It will create a list of Notes.
+<img width="423" height="120" alt="image" src="https://github.com/user-attachments/assets/7ed85b96-7fed-4e39-973a-1188ab0282b0" />
+<img width="2003" height="185" alt="image" src="https://github.com/user-attachments/assets/31a43e93-d048-400f-9295-d84aa68dd481" />
+3. When you are happy with the list, click on `Export to Canvas`. Enter the name of a new canvas or an existing one. All notes will be displayed on the indicated canvas. If the canvas already exists, then they will be appended. 
+<img width="724" height="256" alt="image" src="https://github.com/user-attachments/assets/a402b326-e61c-4d50-96c7-956768fac8a0" />
+
+https://github.com/user-attachments/assets/b10c44d2-a7c5-46fb-b35f-9d1aa67bdb30
+
+## I want to combine the content of many notes on a canvas and create a new note from the result
+
+1. Open the *Command Palette* with `Ctrl`/`Cmd` + `P` or by clicking on the icon `>_` on the left.
+2. Type `spawn construct`. Select `Templater Create Templates/spawn_construct_note.md`. Follow the pop-ups.
+3. Drag the newly created *ConstructNote* onto the *SynthesisCanvas*.
+4. On the *SynthesisCanvas*, link all *AtomicNotes* to the *ConstructNote*.
+<img width="1437" height="898" alt="image" src="https://github.com/user-attachments/assets/9d4efe61-89f1-47cc-aa36-6e9f9d9f4fc8" />
+
+6. Open the *ConstrucNote*, then the *Command Palette*. Type `insert integrate` and select `Templater Insert Templates/integrate_notes_into_target.md`. The content of all linked notes will be pasted on cursor position. 
+
+This is the result:
+<img width="2469" height="1129" alt="image" src="https://github.com/user-attachments/assets/c48f4e3e-de0b-4ce8-9bb6-ebcadc81964b" />
+<img width="2469" height="1311" alt="image" src="https://github.com/user-attachments/assets/7c05f999-2233-44f4-b998-b2f42f735b4b" />
+
+And again, all linkes are created automatically: 
+
+<img width="937" height="753" alt="image" src="https://github.com/user-attachments/assets/a1d485d3-2e77-4aa3-a4f9-638ddde2d6cd" />
+
+https://github.com/user-attachments/assets/de9f4cf6-ce3f-429d-a0ad-dabdd13eaf7d
 
 # Yes, but *why*?
 
