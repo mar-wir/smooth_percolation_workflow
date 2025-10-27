@@ -5,8 +5,6 @@ const options = ["document_section","construct","character","definition","nonede
 const func = await tp.system.suggester(options, options)
 tp.system.suggester
 
-const selectedProject = await tp.system.prompt("Choose a (new) Project Name")
-
 await tp.file.move(`ContentSynthesis/${newFile}`);
 _%>
 ---
@@ -15,7 +13,6 @@ tags: ConstructNote
 banner: [[construct_node_header.webp]]
 Class: ConstructNote
 function: <%`${ func }`%>
-project: <%`${ selectedProject }`%>
 links_to_constructs: 
 creation_timestamp: <% moment().format("YYYY-MM-DD HH:mm") %>
 ---

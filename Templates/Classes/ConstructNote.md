@@ -2,21 +2,20 @@
 limit: 20
 mapWithTag: false
 icon: cog
-tagNames: 
-filesPaths: 
-bookmarksGroups: 
-excludes: 
-extends: 
+tagNames:
+filesPaths:
+bookmarksGroups:
+excludes:
+extends:
 savedViews: []
-favoriteView: 
+favoriteView:
 fieldsOrder:
   - 8TQFVT
   - qN0OvH
-  - ptxh4i
   - 5UL4oD
   - c18TBl
   - 3dqdEM
-version: "2.9"
+version: "2.10"
 fields:
   - name: icon
     type: Input
@@ -37,11 +36,6 @@ fields:
       thumbnailSize: "100"
     path: ""
     id: 5UL4oD
-  - name: project
-    type: Input
-    options: {}
-    path: ""
-    id: ptxh4i
   - name: function
     type: Select
     options:
