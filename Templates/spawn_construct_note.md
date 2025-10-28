@@ -16,7 +16,3 @@ function: <%`${ func }`%>
 links_to_constructs: 
 creation_timestamp: <% moment().format("YYYY-MM-DD HH:mm") %>
 ---
-
-#### Original Text
-
-All text here can be further integrated via the template!
