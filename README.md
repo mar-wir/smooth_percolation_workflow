@@ -1,3 +1,22 @@
+# Table of Contents
+
+- [What _is_ this?](#what--is--this-)
+- [TLDR How-To Guide and Examples](#tldr-how-to-guide-and-examples)
+  * [Starting Out in Zotero: Import, Read and Mark](#starting-out-in-zotero--import--read-and-mark)
+  * [I want to import all markings I made in a paper/book/document to Obsidian](#i-want-to-import-all-markings-i-made-in-a-paper-book-document-to-obsidian)
+  * [I want to create notes from my markings that are automatically linked to its source](#i-want-to-create-notes-from-my-markings-that-are-automatically-linked-to-its-source)
+  * [I want to create a list based on filters and tags of several notes and move them all to a canvas](#i-want-to-create-a-list-based-on-filters-and-tags-of-several-notes-and-move-them-all-to-a-canvas)
+  * [I want to combine the content of many notes on a canvas and create a new note from the result](#i-want-to-combine-the-content-of-many-notes-on-a-canvas-and-create-a-new-note-from-the-result)
+- [Yes, but *why*?](#yes--but--why--)
+- [Detailed Workflow Description](#detailed-workflow-description)
+    + [**Reading and Documentation Phase**](#--reading-and-documentation-phase--)
+    + [**Writing Phase**](#--writing-phase--)
+- [Functionalities which enable/support the percolation workflow](#functionalities-which-enable-support-the-percolation-workflow)
+- [Installation and Dependencies](#installation-and-dependencies)
+  * [Must-Haves](#must-haves)
+  * [AI Assistance](#ai-assistance)
+  * [Pandoc](#pandoc)
+
 # What _is_ this?
 
 Work in progress! Tested on Linux Ubuntu and Windows 11. Color scheme configured for dark themes.
@@ -51,9 +70,12 @@ The links between notes are generated automatically:
 
 1. Go to Queries/Transfer to Canvas
 2. Edit the query to your liking. It will create a list of Notes.
+
 <img width="423" height="120" alt="image" src="https://github.com/user-attachments/assets/7ed85b96-7fed-4e39-973a-1188ab0282b0" />
 <img width="2003" height="185" alt="image" src="https://github.com/user-attachments/assets/31a43e93-d048-400f-9295-d84aa68dd481" />
+
 3. When you are happy with the list, click on `Export to Canvas`. Enter the name of a new canvas or an existing one. All notes will be displayed on the indicated canvas. If the canvas already exists, then they will be appended. 
+
 <img width="724" height="256" alt="image" src="https://github.com/user-attachments/assets/a402b326-e61c-4d50-96c7-956768fac8a0" />
 
 https://github.com/user-attachments/assets/b10c44d2-a7c5-46fb-b35f-9d1aa67bdb30
@@ -64,6 +86,7 @@ https://github.com/user-attachments/assets/b10c44d2-a7c5-46fb-b35f-9d1aa67bdb30
 2. Type `spawn construct`. Select `Templater Create Templates/spawn_construct_note.md`. Follow the pop-ups.
 3. Drag the newly created *ConstructNote* onto the *SynthesisCanvas*.
 4. On the *SynthesisCanvas*, link all *AtomicNotes* to the *ConstructNote*.
+
 <img width="1437" height="898" alt="image" src="https://github.com/user-attachments/assets/9d4efe61-89f1-47cc-aa36-6e9f9d9f4fc8" />
 
 6. Open the *ConstrucNote*, then the *Command Palette*. Type `insert integrate` and select `Templater Insert Templates/integrate_notes_into_target.md`. The content of all linked notes will be pasted on cursor position. 
@@ -190,7 +213,7 @@ All commands need to be run in editing view. The GPU reliant commands can techni
 | Content Creation: Spawn a ConstructNote and fill metadata                                 | No           | Any                                           | `Templater: Create Templates/spawn_construct_note.md`             | Creates a **ConstructNote** in the correct directory. Popups prompt for defining metadata properties such as `type of construct` (e.g., document section, definition, abstraction) and `project` (for grouping related ConstructNotes). This tool **mitigates manual copy-pasting** but can also be done manually if needed.                                                                                                                                                                                                                                                                                                                                                                       |
 | Content Creation: Gathers all text from linked Notes on the Canvas under a certain header | No           | Cursor position in active editor              | `Templater: Insert Templates/integrate_notes_into_target.md`      | When **drawing links on the SynthesisCanvas** between **AtomicNotes and ConstructNotes**, the `links_to_constructs` metadata property is **automatically updated** with the correct links (enabled via the [Metadata Menu](https://mdelobelle.github.io/metadatamenu/) plugin). Activating the template **pulls text from all linked notes** into the active ConstructNote, but only from the `"Original Text"` section. This also works for links between ConstructNotes or even NexusNotes (*though linking NexusNotes isn’t recommended*). Only **links from the SynthesisCanvas** are considered, but they can be manually edited if needed. Another **automation to eliminate copy-pasting**. |
 | Content Creation: Make a DataView query and move resulting files to the chosen canvas     | No           |                                               | See `example_query.md` in **Queries** folder.                     | This template was generously contributed by [Claudio Lassala](https://github.com/claudiolassala). Modify the sample query in the `Queries` folder to filter by **tags, folders, or other criteria**. The resulting list can then be **exported to a chosen canvas** (*note: the full path to the canvas must be specified, e.g., `ContentSynthesis/SynthesisCanvas`*). This template **removes the need for manual drag-and-drop**.                                                                                                                                                                                                                                                                |
-| Content Creation: Make a JavaScript query and move resulting files to the chosen canvas   | No           |                                               | See `example_query.md` in **Queries** folder.                     | The same as the **Query-Based Canvas Export**, but uses **JavaScript queries** instead of **DataView queries**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Content Creation: Make a JavaScript query and move resulting files to the chosen canvas   | No           |                                               | See `Transfer to Canvas.md` in **Queries** folder.                     | The same as the **Query-Based Canvas Export**, but uses **JavaScript queries** instead of **DataView queries**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Content Management                                                                        | No           | Click on icon on classes in Templates/Classes | -                                                                 | Generates a **comprehensive overview table** of all members within a class.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 # Installation and Dependencies
@@ -233,19 +256,3 @@ Tested on Linux Ubuntu 24.04 and Windows 11.
 Pandoc is used for exporting the markdown text of your finished write-ups to any imaginable format. If you need to export to pdf, a additional dependency is needed, called "XeLaTeX".
 1. [Pandoc](https://pandoc.org/installing.html). After installation, you need to modify the path to your pandoc installation in the Pandoc Reference List plugin settings
 2. [LaTeX Compiler](https://www.latex-project.org/get/) The "flavour" (MikTex, Xelatex, LatexLive etc.) depends on you system. In my case, Xelatex worked for Ubuntu.
-
-# Plugins, their usage and further suggestions
-
-Coming Soon
-
-# Folder Structure Guide
-
-Coming Soon
-
-# Demonstration and Screenshots
-
-Coming Soon
-
-# Attribution
-
-Coming Soon
