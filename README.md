@@ -30,8 +30,12 @@ Starting point usually are elements in a Zotero library. Those elements, if prop
 ## Starting Out in Zotero: Import, Read and Mark
 
 Import a paper, book or any other document type into Zotero. Metadata is updated automatically in most cases. If not, with the ISBN or other identifier one surely can succeed. 
-
+<details>
+  <summary><b>Video Guide<b></summary>
+ 
 https://github.com/user-attachments/assets/bccf533a-78a5-48b8-9dc5-d1b06c9b58b9
+
+</details>
 
 ## I want to import all markings I made in a paper/book/document to Obsidian
 
@@ -41,11 +45,20 @@ https://github.com/user-attachments/assets/bccf533a-78a5-48b8-9dc5-d1b06c9b58b9
 4. Zotero will spawn a small window. Change to it and start typing the name(s) of the documents of interest (author, title etc.). Select the ones of interest.
 5. A new *NexusNote* will be created with the corresponding *citekey* and all relevant metadata. Done!
 
+<details>
+  <summary><b>Video Guide<b></summary>
+ 
 https://github.com/user-attachments/assets/b3119937-c88b-4c0b-ac13-6284356ddd60
 
+</details>
+
+<details>
+  <summary><b>Screenshots<b></summary>
+ 
 <img width="2460" height="1323" alt="image" src="https://github.com/user-attachments/assets/37f64e13-5df9-4f96-8857-9f3d462cf1e8" />
 <img width="2460" height="1323" alt="image" src="https://github.com/user-attachments/assets/8e1fb093-902a-44b4-a480-c6888dfee8c3" />
 
+</details>
 
 ## I want to create notes from my markings that are automatically linked to its source
 
@@ -56,9 +69,18 @@ Be sure you are in **edit mode** (top right icon).
 3. Open the *Command Palette* with `Ctrl`/`Cmd` + `P` or by clicking on the icon `>_` on the left.
 4. Type `insert atomize`. Select `Templater Insert Templates/atomize_note_extract_text_llm.md` (or the the choice with `no_llm`, see below for the explanation of the difference.) Done!
 
+<details>
+  <summary><b>Video Guide<b></summary>
+ 
 https://github.com/user-attachments/assets/8473befa-47a2-4289-86bb-1c250211f4d4
 
+</details>
+
 With the `llm` option, title and tags get generated automatically for you. This is just to get one started! Also, The content is "reformulated" and explained by the llm for further writing aid. This is pure fluff.
+
+<details>
+  <summary><b>Screenshots<b></summary>
+ 
 
 <img width="2460" height="1323" alt="image" src="https://github.com/user-attachments/assets/00b17de0-cd1f-4581-bcfa-ddbe4286e334" />
 <img width="2460" height="1323" alt="image" src="https://github.com/user-attachments/assets/21d2f9de-e64c-44d1-8a8c-e7a541bae964" />
@@ -66,19 +88,36 @@ With the `llm` option, title and tags get generated automatically for you. This 
 The links between notes are generated automatically:
 <img width="1183" height="990" alt="image" src="https://github.com/user-attachments/assets/efc80b00-ff39-46f8-8be8-6e2b9d929ee9" />
 
+</details>
+
 ## I want to create a list based on filters and tags of several notes and move them all to a canvas
 
 1. Go to Queries/Transfer to Canvas
 2. Edit the query to your liking. It will create a list of Notes.
 
+<details>
+  <summary><b>Screenshots<b></summary>
+ 
 <img width="423" height="120" alt="image" src="https://github.com/user-attachments/assets/7ed85b96-7fed-4e39-973a-1188ab0282b0" />
 <img width="2003" height="185" alt="image" src="https://github.com/user-attachments/assets/31a43e93-d048-400f-9295-d84aa68dd481" />
 
+</details>
+
 3. When you are happy with the list, click on `Export to Canvas`. Enter the name of a new canvas or an existing one. All notes will be displayed on the indicated canvas. If the canvas already exists, then they will be appended. 
 
+<details>
+  <summary><b>Screenshot<b></summary>
+ 
 <img width="724" height="256" alt="image" src="https://github.com/user-attachments/assets/a402b326-e61c-4d50-96c7-956768fac8a0" />
 
+</details>
+
+<details>
+  <summary><b>Video Guide<b></summary>
+ 
 https://github.com/user-attachments/assets/b10c44d2-a7c5-46fb-b35f-9d1aa67bdb30
+
+</details>
 
 ## I want to combine the content of many notes on a canvas and create a new note from the result
 
@@ -87,19 +126,42 @@ https://github.com/user-attachments/assets/b10c44d2-a7c5-46fb-b35f-9d1aa67bdb30
 3. Drag the newly created *ConstructNote* onto the *SynthesisCanvas*.
 4. On the *SynthesisCanvas*, link all *AtomicNotes* to the *ConstructNote*.
 
+<details>
+  <summary><b>Screenshot<b></summary>
+ 
 <img width="1437" height="898" alt="image" src="https://github.com/user-attachments/assets/9d4efe61-89f1-47cc-aa36-6e9f9d9f4fc8" />
+
+</details>
 
 6. Open the *ConstrucNote*, then the *Command Palette*. Type `insert integrate` and select `Templater Insert Templates/integrate_notes_into_target.md`. The content of all linked notes will be pasted on cursor position. 
 
 This is the result:
+
+<details>
+  <summary><b>Screenshots<b></summary>
+ 
 <img width="2469" height="1129" alt="image" src="https://github.com/user-attachments/assets/c48f4e3e-de0b-4ce8-9bb6-ebcadc81964b" />
 <img width="2469" height="1311" alt="image" src="https://github.com/user-attachments/assets/7c05f999-2233-44f4-b998-b2f42f735b4b" />
 
+</details>
+
+
 And again, all linkes are created automatically: 
 
+<details>
+  <summary><b>Screenshot<b></summary>
+ 
 <img width="937" height="753" alt="image" src="https://github.com/user-attachments/assets/a1d485d3-2e77-4aa3-a4f9-638ddde2d6cd" />
 
+</details>
+
+<details>
+  <summary><b>Video Guide<b></summary>
+ 
 https://github.com/user-attachments/assets/de9f4cf6-ce3f-429d-a0ad-dabdd13eaf7d
+
+</details>
+
 
 # Yes, but *why*?
 
