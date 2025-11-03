@@ -76,7 +76,8 @@ https://github.com/user-attachments/assets/8473befa-47a2-4289-86bb-1c250211f4d4
 
 </details>
 
-With the `llm` option, title and tags get generated automatically for you. This is just to get one started! Also, The content is "reformulated" and explained by the llm for further writing aid. This is pure fluff.
+With the `llm` option, **title and tags get generated automatically for you**. This is just to get one started! Also, The content is "reformulated" and explained by the llm for further writing aid. This is pure fluff.
+If one should want a more "traditional" chat experience with (local) LLM's, I recommend the [Obsidian BMO Chatbot Plugin](https://github.com/longy2k/obsidian-bmo-chatbot). Really handy for general back-and-forth with LLM's.
 
 <details>
   <summary>Screenshots</summary>
