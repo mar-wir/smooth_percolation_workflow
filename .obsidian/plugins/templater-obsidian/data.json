@@ -36,7 +36,9 @@
     "Templates/insert_audio_transcription.md",
     "Templates/insert_image_interpretation.md",
     "Templates/spawn_construct_note.md",
-    "Templates/spawn_nexus_note.md"
+    "Templates/spawn_nexus_note.md",
+    "Templates/spawn_political_entity.md",
+    "Templates/combine_headers_of_selection.md"
   ],
   "startup_templates": [
     ""

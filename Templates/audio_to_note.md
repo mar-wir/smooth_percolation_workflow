@@ -2,7 +2,7 @@
 const vox_port = 8099;
 const vox_model = `faster-whisper-small`;
 const ollama_port = 11434;
-const ollama_model = `gemma3:latest`;
+const ollama_model = `gemma4:e4b`;
 
 const { execSync } = require('child_process');
 const fs = require('fs');
@@ -144,7 +144,8 @@ await tp.file.move(`NexusNotes/Audios/${activeFile.basename}/transcription ${act
 _%>
 
 ---
-tags: [NexusNote, audio_transcription, <% tag_suggestion.toLowerCase() %> ]
+tags: [audio_transcription, <% tag_suggestion.toLowerCase() %> ]
+note_type: NexusNote
 banner: [[nexus_note_header.webp]]
 medium_source: <% `"[[${activeFile.name}]]"` %>
 medium: audio

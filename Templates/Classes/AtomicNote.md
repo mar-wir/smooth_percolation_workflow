@@ -2,14 +2,15 @@
 limit: 20
 mapWithTag: false
 icon: atom
-tagNames: 
-filesPaths: 
-bookmarksGroups: 
-excludes: 
-extends: 
+tagNames: null
+filesPaths: null
+bookmarksGroups: null
+excludes: null
+extends: null
 savedViews: []
-favoriteView: 
+favoriteView: null
 fieldsOrder:
+  - DePYlg
   - fC06Hd
   - Ycq7WJ
   - REUuf2
@@ -19,56 +20,56 @@ fieldsOrder:
   - g8XeCh
   - YaVbRC
   - jpmrGt
-version: "2.16"
+version: '2.18'
 fields:
   - name: tags
     type: Input
     options: {}
-    path: ""
+    path: ''
     id: jpmrGt
   - name: nexus_medium
     type: Input
     options: {}
-    path: ""
+    path: ''
     id: YaVbRC
   - name: nexus_creators
     type: Input
     options: {}
-    path: ""
+    path: ''
     id: g8XeCh
   - name: nexus_identifier
     type: Input
     options: {}
-    path: ""
+    path: ''
     id: ZFZa69
   - name: nexus_citekey
     type: Input
     options: {}
-    path: ""
+    path: ''
     id: vOxHAF
   - name: category
     type: Input
     options: {}
-    path: ""
+    path: ''
     id: iRSY10
   - name: icon
     type: Select
     options:
       sourceType: ValuesList
       valuesList:
-        "1": 🎙️
-        "2": 📚
-        "3": 📜
-        "4": ✍️
-        "5": 📊
-        "6": 📽️
-        "7": 🌐
-    path: ""
+        '1': 🎙️
+        '2': 📚
+        '3': 📜
+        '4': ✍️
+        '5': 📊
+        '6': 📽️
+        '7': 🌐
+    path: ''
     id: REUuf2
   - name: nexus_link
     type: File
     options: {}
-    path: ""
+    path: ''
     id: Ycq7WJ
   - name: links_to_constructs
     type: Canvas
@@ -80,6 +81,16 @@ fields:
       edgeFromSides: []
       edgeToSides: []
       edgeLabels: []
-    path: ""
+    path: ''
     id: fC06Hd
+  - name: note_type
+    type: Input
+    options:
+      template: AtomicNote
+    path: ''
+    id: DePYlg
+tags:
+  - metadata
+  - note-taking
+  - atomic-notes
 ---

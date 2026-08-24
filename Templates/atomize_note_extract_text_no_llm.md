@@ -13,12 +13,13 @@ if ( !sel ) {
 
 const newFile = await tp.system.prompt("New file name")
 
-const options = ["fact","opinion","assumption","idea","theory","nonedescript"]
+const options = ["goal","strategy","tactic","definition","methodology", "assumption", "theory","nonedescript", "citation"]
 const noteType = await tp.system.suggester(options, options)
 
 const content = 
 `---
-tags: AtomicNote
+tags: []
+note_type: AtomicNote
 nexus_name: ${ tp.frontmatter["name"] }
 nexus_medium: ${ tp.frontmatter["medium"] } 
 nexus_creators: ${ tp.frontmatter["creators"] }

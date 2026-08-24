@@ -3,7 +3,8 @@ name: {{title | replace(":", "")}}
 medium: {{itemType}}
 creators: {%- if editors %} {{editors}} {%- else %} {{authors}} {%- endif %}
 identifier: {%- if DOI %} {{DOI}} {%- else %} {{ISBN}} {%- endif %}
-tags: [NexusNote, {{itemType}}, {% if allTags %}{{allTags}}{% endif %}]
+tags: []
+note_type: NexusNote
 citekey: {{citekey}}
 icon: {%- if itemType == "journalArticle" %} "📜"  {%- else %} "📚" {%- endif %}
 banner: "[[nexus_note_header.webp]]"
@@ -56,25 +57,34 @@ Class: NexusNote
 {% if annots.length > 0 %}
 {% for annot in annots -%}
 
+{#-**comment annotations**-#}
+{%- if annot.comment %}
+###### {{annot.comment | nl2br}} 
+
+{% else %}  
+###### No Category
+
+{%- endif -%}
+
+
 {#-**Annotations that start with #, to be turned into markdown style section headers**-#}
 {% if annot.annotatedText and "#" in annot.annotatedText %}
 {{annot.annotatedText|nl2br|lower|title}} 
 
 {#-**Regular text annotations w/ page number and page link**-#}
 {%- elif annot.annotatedText %} 
-- {{annot.annotatedText | nl2br}}[(pg. {{annot.page}})](zotero://open-pdf/library/items/{{annot.attachment.itemKey}}?page={{annot.page}}) {#**page link**#}
+- {{annot.annotatedText | nl2br}} [(pg. {{annot.page}})](zotero://open-pdf/library/items/{{annot.attachment.itemKey}}?page={{annot.page}}) {#**page link**#} {%- if annot.hashTags %}  *{{annot.hashTags | replace("#", " ") | trim}}*  {% else %}   {%- endif -%}
+
+
 {%- endif -%}
+
 
 {#-**Image annotations**-#}
 {%- if annot.imageRelativePath %}
+
  ![[{{annot.imageRelativePath}}]]
 {%- endif %}
 
-{#-**comment annotations**-#}
-{%- if annot.comment %}
->[!annot] Comment
->{{annot.comment | nl2br}}
- {%- endif %}
 
 {%- endfor %}
 {%- endif -%}

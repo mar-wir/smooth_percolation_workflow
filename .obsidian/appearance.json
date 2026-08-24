@@ -2,9 +2,9 @@
   "nativeMenus": false,
   "theme": "obsidian",
   "accentColor": "#ffffff",
-  "cssTheme": "Obsidianite",
+  "cssTheme": "Red-Shadow",
   "enabledCssSnippets": [],
-  "baseFontSize": 20,
+  "baseFontSize": 17,
   "interfaceFontFamily": "Bahnschrift",
   "textFontFamily": "Helvetica Neue",
   "showRibbon": true

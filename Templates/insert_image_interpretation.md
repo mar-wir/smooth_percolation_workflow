@@ -1,6 +1,6 @@
 <%*
 const ollama_url = "http://localhost:11434/api/generate";
-const model_to_use = "gemma3:latest";
+const model_to_use = "gemma4:e4b";
 
 const fs = require('fs');
 const { execSync } = require('child_process');

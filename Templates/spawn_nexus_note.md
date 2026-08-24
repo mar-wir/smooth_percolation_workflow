@@ -11,7 +11,8 @@ name:
 medium:  <%`${ medium }`%>
 creators: 
 identifier: 
-tags: NexusNote  
+tags:
+note_type: NexusNote
 citekey: 
 icon: "📚"
 banner: "[[nexus_note_header.webp]]"

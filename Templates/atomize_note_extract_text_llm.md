@@ -1,8 +1,6 @@
-
-
 <%*
 const ollama_url = "http://localhost:11434/api/generate";
-const model_to_use = "gemma3:latest";
+const model_to_use = "gemma4:e4b";
 
 const dv = this.app.plugins.plugins["dataview"].api
 
@@ -16,11 +14,11 @@ if ( !sel ) {
   return;
 }
 
-const tag_prompt = ` Generate tags without using #, focusing on single words over phrases for documents' key topics. Format: tag1, tag2, tag3. Limit tags to four or five. Limit multiword tags. Just output the words. Do not comment the response. Remember, not more than 5 tags!  Contents: ${sel} `;
+// const tag_prompt = ` In english, generate tags without using #, focusing on single words over phrases for documents' key topics. Format: tag1, tag2, tag3. Limit tags to four or five. Limit multiword tags. Just output the words on one line, separated by commas. Do not comment the response. Remember, not more than 5 tags! The tags must be in English. Contents: ${sel} `;
 
-const title_prompt = ` Generate a one-sentence rephrasing of the text like a summary, capturing the texts key content. Just output the short sentence. Avoid phrases like "the paper", "The text" or "the document". Do absolutely not comment the response. Contents: ${sel} `; 
+const title_prompt = ` Generate a one-sentence rephrasing of the text like a summary, capturing the texts key content. At most 20 words. Just output the short sentence. Extract core meaning. Short. Avoid phrases like "the paper", "The text" or "the document". Do absolutely not comment the response. Do this in the language the content is formulated in. Contents: ${sel} `; 
 
-const explain_prompt = ` Reformulate and thoroughly explain the contents of the text in a simple, clear, and comprehensive manner for a general audience, even if that means making the explanation longer than the original text. Capture all key ideas and essential content without omitting any relevant information. Use a style that is engaging, informative, and neutral, as if explaining the content for an educational magazine or knowledge platform. Use bullet points, tables, lists, sentences, and emojis whenever they enhance clarity, structure, or engagement. Add tables with explanations of difficult terms and emojis for engagement. Summarize each paragraph with a emoji and key-words. Focus on making the explanation thorough, balanced, and unbiased without speculating, fabricating information, or including personal opinions. If certain parts of the content are unclear, explain them to the best of your ability based on the available information. Just output the response. Do absolutely not comment on the response. Contents: ${sel} `;
+const explain_prompt = ` Reformulate and thoroughly explain each key term of the text in a simple, clear, and comprehensive manner. Focus on making the explanation thorough, balanced, and unbiased without speculating, fabricating information, or including personal opinions. Just output the response. Do absolutely not comment on the response. Do this in the language the content is formulated in. Contents: ${sel} `;
 
 
 async function generateOllama(prompt, model, url, keepalive) {
@@ -81,16 +79,18 @@ async function generateOllama(prompt, model, url, keepalive) {
 	return result
 }
 
-const tag_suggestion = await generateOllama(tag_prompt, model_to_use, ollama_url, 1);
+//const tag_suggestion = await generateOllama(tag_prompt, model_to_use, ollama_url, 1);
 const newFile = await generateOllama(title_prompt, model_to_use, ollama_url, 1);
-const explain_simplify = await generateOllama(explain_prompt, model_to_use, ollama_url, 0);
+//const explain_simplify = await generateOllama(explain_prompt, model_to_use, ollama_url, 0);
 
-const options = ["fact","opinion","assumption","idea","theory","nonedescript"]
-const noteType = await tp.system.suggester(options, options)
-
+const options = ["goal","strategy","tactic","definition","methodology", "assumption", "theory","nonedescript", "citation"]
+noteType = "theory"
+//const noteType = await tp.system.suggester(options, options)
+//tags: [${tag_suggestion.toLowerCase()}]
 const content = 
 `---
-tags: [AtomicNote, ${tag_suggestion.toLowerCase()}]
+tags: []
+note_type: AtomicNote
 nexus_name: ${ tp.frontmatter["name"] }
 nexus_medium: ${ tp.frontmatter["medium"] } 
 nexus_creators: ${ tp.frontmatter["creators"] }
@@ -107,12 +107,7 @@ links_to_constructs:
 #### Original Text
 
 ${ sel }
-
-#### LLM Reformulation
-
-${explain_simplify}
-
 `
-tR = `[[${ newFile.replaceAll(":", "").replaceAll("//", "").replaceAll("\\", "")}]]`
+tR = `[[${ newFile.replaceAll(":", "").replaceAll("–", "").replaceAll("//", "").replaceAll("\\", "")}]]`
 await tp.file.create_new(content, newFile, false, baseFolder)
 _%>

@@ -5,6 +5,11 @@
     "tags": "tags",
     "title": "text",
     "authors": "text",
-    "note_type": "multitext"
+    "note_type": "multitext",
+    "goal_time_horizons": "checkbox",
+    "geographical_domain_of_application": "checkbox",
+    "are_assumptions_discussed": "checkbox",
+    "strategy_derived_from_goal": "checkbox",
+    "tactic_derived_from_strategy_or_goal": "checkbox"
   }
 }

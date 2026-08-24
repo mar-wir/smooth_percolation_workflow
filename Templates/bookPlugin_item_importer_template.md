@@ -1,15 +1,19 @@
 ---
-name: {{title}}
+name:
+  '[object Object]': null
+note_type: NexusNote
 medium: book
-creators: {{authors}} 
-identifier: {{ISBN10}}
-tags: [NexusNote, book, {{category}}]
-citekey:
-icon: "📚"
-banner: "[[nexus_note_header.webp]]"
+creators:
+  '[object Object]': null
+identifier:
+  '[object Object]': null
+tags: []
+citekey: null
+icon: 📚
+banner: '[[nexus_note_header.webp]]'
 Class: NexusNote
-import_timestamp: 
-medium_source:
+import_timestamp: null
+medium_source: null
 ---
 
 Link to source file: must be provided manually.

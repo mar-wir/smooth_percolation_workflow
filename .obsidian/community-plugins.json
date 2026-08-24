@@ -4,13 +4,15 @@
   "templater-obsidian",
   "advanced-canvas",
   "obsidian-icon-folder",
-  "execute-code",
   "code-styler",
-  "obsidian-file-color",
   "ninja-cursor",
   "callout-manager",
   "obsidian-zotero-desktop-connector",
   "pexels-banner",
   "metadata-menu",
-  "obsidian-pandoc-reference-list"
+  "obsidian-pandoc-reference-list",
+  "obsidian-kanban",
+  "bmo-chatbot",
+  "ai-tagger-universe",
+  "obsidian-file-color"
 ]
